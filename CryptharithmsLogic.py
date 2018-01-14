@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
+import re
 from classes import *
 
 state = finishStatement
@@ -14,10 +15,24 @@ def initializeProgram():
     response = raw_input("INPUT A NAME FOR THE RESPONSE OR LEAVE BLANK FOR DEFAULT (response.txt) > ")
     if response == "":
         response = "response.txt"
-    info.extract(inputs)
+    solutionEngine()
 
-def solutionEngine(content):
-    #hard logic
+def solutionEngine():
+    info.extract(inputs)
+    contentFile = inputs
+
+    for case in inputs:
+        #ex "WHAT + WAS + THY == CAUSE"
+        regex = re.compile('[^a-zA-Z ]')
+        regex.sub('', case)
+
+
+    info.extract(outputs)
+    contentFile = outputs
+
+    info.compare(solution, outputs)
+
+    #Writes a solution
     responseFile(solution)
     #Declares if the solution is ready
     state.responseDone(state)

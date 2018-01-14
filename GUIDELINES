@@ -1,0 +1,35 @@
+You will be given a cryptarithm in string form.
+Your task is to output the letters and corresponding numbers which make up a
+valid solution to the puzzle.
+
+For the purposes of this challenge, all equations will consist only of addition.
+
+Leading zeroes (in a multi-digit number) are not allowed in a valid solution.
+
+The input is guaranteed to be a valid cryptarithm.
+
+Example
+Input:
+"THIS + IS + HIS == CLAIM"
+
+Output:
+{"A"=>7, "C"=>1, "H"=>8, "I"=>5, "L"=>0, "M"=>6, "S"=>2, "T"=>9}
+
+Challenge Input
+"WHAT + WAS + THY == CAUSE"
+
+"HIS + HORSE + IS == SLAIN"
+
+"HERE + SHE == COMES"
+
+"FOR + LACK + OF == TREAD"
+
+"I + WILL + PAY + THE == THEFT"
+Output
+{"A"=>0, "C"=>1, "E"=>4, "H"=>2, "S"=>3, "T"=>6, "U"=>7, "W"=>9, "Y"=>5}
+
+{"A"=>1, "E"=>8, "H"=>3, "I"=>5, "L"=>0, "N"=>6, "O"=>9, "R"=>7, "S"=>4}
+
+{"A"=>6, "C"=>7, "D"=>3, "E"=>2, "F"=>5, "K"=>8, "L"=>9, "O"=>4, "R"=>0, "T"=>1}
+
+{"A"=>2, "E"=>4, "F"=>7, "H"=>0, "I"=>8, "L"=>3, "P"=>5, "T"=>1, "W"=>9, "Y"=>6}

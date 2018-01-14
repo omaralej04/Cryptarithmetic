@@ -20,11 +20,11 @@ class finishStatement:
 class infoProcessing:
 
     #Extracts the inputs to process
-    def extract(inputs):
-        with open(inputs) as f:
-            content = f.readlines()
-            content = [x.strip('\n') for x in f.readlines()]
-        return content
+    def extract(content):
+        with open(content) as f:
+            contentFile = f.readlines()
+            contentFile = [x.strip('\n') for x in f.readlines()]
+        return contentFile
 
     def compare(inputs, outputs):
         #todo
